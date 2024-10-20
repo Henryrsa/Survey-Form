@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Champbucks</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div>
+            <h1 id="title">Champbucks Survey Form</h1>
+
+            <p id="description">Help us improve our platform by completing this
+                survey</p>
+
+            <form id="survey-form">
+
+                <label id="name-label" for="name">Name
+                    <input id="name" name="name" required type="text"
+                        placeholder="Enter your name">
+                </label>
+
+                <label id="email-label" for="email">Email
+                    <input id="email" name="email" required type="email"
+                        placeholder="Enter your email">
+                </label>
+
+                <label id="number-label" for="number">Age (optional)
+                    <input id="number" name="age" type="number" min="16"
+                        max="54" placeholder="Age">
+                </label>
+
+                <label id for="dropdown">How likely are you to use our platform
+                    again?
+                    <select id="dropdown" name="likelihood">
+                        <option value disabled selected>Select one</option>
+                        <option value="definitely">Definitely</option>
+                        <option value="maybe">Maybe</option>
+                        <option value="not_sure">Not sure</option>
+                    </select>
+                </label>
+
+                <fieldset>
+                    <legend>Would you recommend freeCodeCamp to a
+                        friend?</legend>
+                    <label><input type="radio" name="recommendation" value="yes"
+                            checked> Yes</label>
+                    <label><input type="radio" name="recommendation" value="no">
+                        No</label>
+                    <label><input type="radio" name="recommendation"
+                            value="maybe"> Maybe</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What would you like to see improved? (Check all that
+                        apply)</legend>
+                    <label><input type="checkbox" name="improvement"
+                            value="front_end"> Front-end Projects</label>
+                    <label><input type="checkbox" name="improvement"
+                            value="back_end"> Back-end Projects</label>
+                    <label><input type="checkbox" name="improvement"
+                            value="data_viz"> Data Visualization</label>
+                    <label><input type="checkbox" name="improvement"
+                            value="challenges"> Challenges</label>
+                    <label><input type="checkbox" name="improvement"
+                            value="community"> Open Source Community</label>
+                    <label><input type="checkbox" name="improvement"
+                            value="gitter"> Gitter help rooms</label>
+                    <label><input type="checkbox" name="improvement"
+                            value="videos"> Videos</label>
+                    <label><input type="checkbox" name="improvement"
+                            value="meetups"> City Meetups</label>
+                    <label><input type="checkbox" name="improvement"
+                            value="wiki"> Wiki</label>
+                    <label><input type="checkbox" name="improvement"
+                            value="forum"> Forum</label>
+                </fieldset>
+
+                <label for="comments">Any additional comments:
+                    <textarea id="comments" name="comments" rows="5" cols="33"
+                        placeholder="Enter your comments here"></textarea>
+                </label>
+
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
